@@ -11,12 +11,12 @@
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet"  href="{% static 'css/estilos.css' %}">
-    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
+   
+    
     {% block css %}
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/css/materialize.min.css"
-        integrity="sha256-qj3p6P1fJIV+Ndv7RW1ovZI2UhOuboj9GcODzcNFIN8=" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"  media="screen,projection"/>
+   
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}"  media="screen,projection"/>
     {% endblock css %}
 
 </head>
@@ -65,10 +65,8 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Company Bio</h5>
-                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like
-                        it's our full time job. Any amount would help support and continue development on this project
-                        and is greatly appreciated.</p>
+                    <h5 class="white-text">Ejercicio Repaso</h5>
+                    <p class="grey-text text-lighten-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem totam nostrum porro harum dolorum minima deleniti optio, omnis eveniet repellendus sequi animi. Suscipit eius officiis molestiae debitis autem in totam.</p>
 
 
                 </div>
@@ -94,17 +92,22 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">JGL</a>
             </div>
         </div>
     </footer>
 
 
+    
+
+    {% block javascript %}
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    {% block javascript %}
+  
+
+    
+	
+	<script type="text/javascript" src="{% static 'js/materialize.js' %}"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
